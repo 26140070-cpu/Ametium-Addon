@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.ametium.addon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatInterceptor",
+    "ContainerButtonsMixin",
+    "ScreenAccessor",
+    "SplashOverlayMixin",
+    "TabsMixin",
+    "PlayerMoveC2SPacketAccessor",
+    "AbstractBoatEntity",
+    "ModulesScreenWCategoryControllerMixin",
+    "accessor.WidgetScreenAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

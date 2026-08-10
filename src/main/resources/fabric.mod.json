@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "ametium-addon",
+  "version": "1.21.1",
+  "name": "Ametium",
+  "description": "Super Utility Mod.",
+  "authors": [
+    "ItsDarexMC, Cracked by: Donalp012"
+  ],
+  "contact": {
+    "Web": "https://ametium.dev",
+    "Discord": "https://discord.gg/ametium"
+  },
+  "icon": "assets/ametium-addon/icon.png",
+  "environment": "client",
+
+  "entrypoints": {
+    "meteor": [
+      "com.ametium.addon.AmetiumAddon"
+    ]
+  },
+
+  "mixins": [
+    "ametium-addon.mixins.json"
+  ],
+
+  "custom": {
+    "meteor-client:color": "90,0,150",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+
+  "depends": {
+    "java": ">=21",
+    "minecraft": "~1.21",
+    "meteor-client": "*"
+  }
+}
